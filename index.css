@@ -7,10 +7,13 @@ html, body, .grid-container {
   --color-lightgrey: #d8d8d8;
   --color-shadow-gray: #f0f0f0;
 
+  --color-neum-light: #f2f2f2;
+  --color-neum-mid: #e0e5ec;
+  --color-neum-dark: #abbad1;
 
-  background: var(--color-lightgrey);
+  --color-neum-mid-darker: #e0e5ec;
 
-  text: #050505;
+  background: var(--color-neum-mid);
 }
 
 .site-warning {
@@ -23,7 +26,7 @@ html, body, .grid-container {
   display: grid;
   grid-template-columns: 0.4fr 1.0fr 1fr 0.4fr;
   grid-template-rows: 0.4fr 24px 2.5fr 0.2fr;
-  gap: 8px 16px;
+  gap: 20px 20px;
   grid-template-areas: "whitespace-left title title whitespace-right"
         "whitespace-left navigation navigation whitespace-right"
         "whitespace-left left-pane right-pane whitespace-right" 
@@ -39,9 +42,6 @@ html, body, .grid-container {
 
 #logo-svg {
   width: 400px;
-  box-shadow:  20px 20px 60px #cfcfcf, 
-             -20px -20px 60px #ffffff;
-  
 }
 
 #site-title-div {
@@ -55,9 +55,7 @@ html, body, .grid-container {
   gap: 1px 1px;
   grid-template-areas: "button-bar profile";
   grid-area: navigation;
-  margin-top: 0px;
-  border: 1px solid var(--color-border-darkgray);
-  
+  margin-top: 0px;  
 }
 
 .button-bar { 
@@ -72,9 +70,6 @@ html, body, .grid-container {
 
 .left-pane { 
   grid-area: left-pane;
-  border: 1px solid var(--color-border-gray);
-  /* border-top: 0px;
-  border-bottom: 0px; */
 }
 
 .right-pane {
@@ -88,14 +83,11 @@ html, body, .grid-container {
 
 .spotlight { 
   grid-area: spotlight;
-  border: 1px solid var(--color-border-gray);
-  background-color: lightgray;
 }
 
 
 .partner-list { 
   grid-area: partner-list; 
-  border: 1px solid var(--color-border-gray);
 }
 
 .whitespace-right { 
@@ -111,10 +103,9 @@ html, body, .grid-container {
 }
 
 
-
-
-
-.profile { grid-area: profile; }
+.profile { 
+  grid-area: profile; 
+}
 
 .footer { 
   grid-area: footer; 
@@ -122,19 +113,12 @@ html, body, .grid-container {
 }
 
 .shadow00 {
-/* -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75); */
-
-  /* box-shadow: 4px 4px 0px var(--color-shadow-gray), -4px -4px 0px var(--color-shadow-gray); */
- 
-  border-radius: 0px;
-  background: #f3f3f3;
-  box-shadow:  10px 10px 20px #f0f0f0, 
-             -20px -20px 100px #ffffff;
-
-  background-color: white;
-  /* background-clip: content-box; */
+  border-radius: 4px;
+  border: 1px solid var(--color-neum-dark);
+  /* For Neumorphism Effect */
+  background-color: var(--color-neum-mid);
+  box-shadow: 9px 9px 16px var(--color-neum-dark), -9px -9px 16px var(--color-neum-light) ;
+  /* For Neumorphism Effect */
 }
 
 .grid-container *:after { 
@@ -160,7 +144,7 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: larger;
-  border-bottom: 1px solid rgb(36, 3, 3);
+  border-bottom: 1px solid rgb(43, 4, 4);
 }
 
 
