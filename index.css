@@ -18,7 +18,7 @@ html, body, .grid-container {
   grid-template-columns: 0.3fr 1.4fr 1fr 0.3fr;
   grid-template-rows: 0.5fr 24px 2.5fr 0.2fr;
   gap: 8px 16px;
-  grid-template-areas: "whitespace-left title . whitespace-right"
+  grid-template-areas: "whitespace-left title title whitespace-right"
         "whitespace-left navigation navigation whitespace-right"
         "whitespace-left left-pane right-pane whitespace-right" 
         "footer footer footer footer";
@@ -77,7 +77,6 @@ html, body, .grid-container {
 }
 
 .title { 
-  margin-top: 8px;
   grid-area: title;
 }
 
