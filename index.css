@@ -13,6 +13,12 @@ html, body, .grid-container {
   text: #050505;
 }
 
+.site-warning {
+  width: 390px;
+  background-color: rgb(255, 94, 94);
+  padding-left: 4px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 0.4fr 1.0fr 1fr 0.4fr;
