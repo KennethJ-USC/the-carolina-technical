@@ -1,3 +1,3 @@
-#!/usr/local/env bash
+#!/bin/bash
 
-scp *.html *.css *.svg kennyaj123_thecarolinatechnical@ssh.phx.nearlyfreespeech.net
+scp -rp ./* kennyaj123_thecarolinatechnical@ssh.phx.nearlyfreespeech.net:/home/public
