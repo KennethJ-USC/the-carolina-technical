@@ -17,7 +17,6 @@ html, body, .grid-container {
 }
 
 .site-warning {
-  width: 405px;
   background-color: rgb(255, 94, 94);
   padding-left: 4px;
 }
@@ -162,3 +161,23 @@ h1, h2, h3 {
   color: black;
 }
 
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.0fr 1.0fr 1.0fr 0.0fr;
+    grid-template-rows: 0.4fr 24px 2.5fr 1fr 0.2fr;
+    gap: 20px 0px;
+    grid-template-areas: "whitespace-left title title whitespace-right"
+          "whitespace-left navigation navigation whitespace-right"
+          "whitespace-left left-pane left-pane whitespace-right" 
+          "whitespace-left right-pane right-pane whitespace-right"
+          "footer footer footer footer";
+  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
