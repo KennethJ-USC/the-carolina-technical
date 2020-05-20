@@ -132,8 +132,8 @@ html, body, .grid-container {
 
 .o {
   background-color: rgb(230, 228, 209);
-  
-
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 a {
