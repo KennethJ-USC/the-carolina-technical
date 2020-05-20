@@ -161,7 +161,7 @@ h1, h2, h3 {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .grid-container {
     display: grid;
     grid-template-columns: 0.0fr 1.0fr 1.0fr 0.0fr;
