@@ -4,9 +4,12 @@
 <head>
   <title>The Carolina Technical</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/styles/jquery.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -37,36 +40,84 @@
     </div>
 
     <div class="left-pane shadow00">
-      <h3>Feed</h3>
+      <!-- <h3>Feed</h3> -->
       <ul class="feed-list">
-        <li class="feed-list-item" id="top-item">
+        <li class="feed-list-item user-active" id="top-item">
           <ul class="feed-flex-container">
             <li class="feed-flex-item flex-thumbnail">
-              <img src="/feed/template/carolina01.png" class="feed-img" id="template-thumbnail" alt="Generic SC photo">
+              <a class="post-link" href="/feed/posts/template-post.html">
+                <img src="/feed/template/carolina01.png" class="feed-img" id="template-thumbnail"
+                  alt="Generic SC photo">
+              </a>
             </li>
             <li class="feed-flex-item flex-content">
               <ul class="feed-item-body-list">
                 <li class="feed-item-title">
-                  <b>Title - this is a template post</b>
+                  <a class="post-link" href="/feed/posts/template-post.html">
+                    <b>Title - this is a template post</b>
+                  </a>
                 </li>
-                <li class="feed-item-source">thecarolinatechnical.com</li>
+                <li class="feed-item-source">
+                  <a class="feed-item-source-link" href="/index.html">(thecarolinatechnical.com)</a>
+                </li>
+                <li class="feed-item-tags">
+                  <ul class="tags-flex-container">
+                    <li class="tag-flex-item">text post</li>
+                    <li class="tag-flex-item">test</li>
+                  </ul>
+                </li>
                 <li class="feed-item-context">Comments | Share | Permalink</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li class="feed-list-item" id="top-item">
+        <li class="feed-list-item" id="second-item">
           <ul class="feed-flex-container">
             <li class="feed-flex-item flex-thumbnail">
-              <img src="/feed/template/kingst00.jpeg" class="feed-img" id="template-thumbnail"
-                alt="King St, Charleston, SC">
+              <a class="post-link" href="https://www.reddit.com/r/pics/comments/92dd8/test_post_please_ignore/">
+                <img src="/feed/template/kingst00.jpeg" class="feed-img" id="template-thumbnail"
+                  alt="King St, Charleston, SC">
+              </a>
             </li>
             <li class="feed-flex-item flex-content">
               <ul class="feed-item-body-list">
                 <li class="feed-item-title">
-                  <b>Another post in the feed</b>
+                  <a class="post-link" href="https://www.reddit.com/r/pics/comments/92dd8/test_post_please_ignore/">
+                    <b>Another post in the feed</b>
+                  </a>
                 </li>
                 <li class="feed-item-source">thecarolinatechnical.com</li>
+                <li class="feed-item-tags">
+                  <ul class="tags-flex-container">
+                    <li class="tag-flex-item">text post</li>
+                    <li class="tag-flex-item">test</li>
+                  </ul>
+                <li class="feed-item-context">Comments | Share | Permalink</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="feed-list-item" id="third-item">
+          <ul class="feed-flex-container">
+            <li class="feed-flex-item flex-thumbnail">
+              <a class="post-link" href="https://lichess.org/">
+                <img src="/feed/template/chesspiece00.jpg" class="feed-img" id="template-thumbnail"
+                  alt="Random picture of chess piece.">
+              </a>
+            </li>
+            <li class="feed-flex-item flex-content">
+              <ul class="feed-item-body-list">
+                <li class="feed-item-title">
+                  <a class="post-link" href="https://www.reddit.com/r/pics/comments/92dd8/test_post_please_ignore/">
+                    <b>Another post in the feed</b>
+                  </a>
+                </li>
+                <li class="feed-item-source">thecarolinatechnical.com</li>
+                <li class="feed-item-tags">
+                  <ul class="tags-flex-container">
+                    <li class="tag-flex-item">text post</li>
+                    <li class="tag-flex-item">test</li>
+                  </ul>
                 <li class="feed-item-context">Comments | Share | Permalink</li>
               </ul>
             </li>
@@ -87,9 +138,16 @@
     <div class="whitespace-left"></div>
 
     <div class="footer">
-      <span class="footer-links">
-        <a href="/pages/guidelines.html">Guidelines</a>
-        <a href="/index.html">Home</a>
-        <a href="/pages/about.html">About</a>
-        <a href="/pages/contact.html">Contact</a>
-        <a href=https://github.com/KennethJ-USC/the-carolina-technical>Source Code</a> </div> </div> </body> </html>
+      <ul class="footer-flex-container">
+        <li><a href="/pages/guidelines.html">Guidelines</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="https://github.com/KennethJ-USC/the-carolina-technical">Source Code</a></li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+
+</html>
