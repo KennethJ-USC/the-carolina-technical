@@ -1,0 +1,67 @@
+html, body, .grid-container { 
+    height: 100%; 
+    margin: 0; 
+  
+    --color-border-darkgray: #0f0f0f;
+    --color-border-gray: #505050;
+    --color-lightgrey: #d8d8d8;
+    --color-shadow-gray: #f0f0f0;
+  
+    --color-neum-light: #f2f2f2;
+    --color-neum-mid: #e0e5ec;
+    --color-neum-dark: #abbad1;
+  
+    --color-neum-mid-darker: #e0e5ec;
+  
+    background: var(--color-neum-mid);
+  }
+  
+  .grid-container-static-page {
+    display: grid;
+    grid-template-columns: 0.5fr minmax(290px, 720px) 0.5fr;
+    grid-template-rows: auto 24px 2.5fr 0.2fr;
+    gap: 20px 20px;
+    grid-template-areas: "whitespace-left title whitespace-right"
+          "whitespace-left navigation whitespace-right"
+          "whitespace-left content-pane whitespace-right" 
+          "whitespace-left footer whitespace-right";
+  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+  }
+  
+  
+  .content-pane { 
+    grid-area: content-pane;
+  }
+  
+  .shadow00 {
+    border-radius: 4px;
+    border: 1px solid var(--color-neum-dark);
+    /* For Neumorphism Effect */
+    background-color: var(--color-neum-mid);
+    box-shadow: 9px 9px 16px var(--color-neum-dark), -9px -9px 16px var(--color-neum-light) ;
+    /* For Neumorphism Effect */
+  }
+  
+  h1, h2, h3 {
+    margin-left: 32px;
+    margin-right: 32px;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    border-bottom: 1px solid rgb(43, 4, 4);
+  }
+
+p {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.feed-img {
+  margin: 0px 32px 4px;
+}
+  
+  
+  

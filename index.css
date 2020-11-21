@@ -27,9 +27,9 @@ html, body, .grid-container {
   padding-left: 4px;
 }
 
-.grid-container {
+/* .grid-container {
   display: grid;
-  grid-template-columns: 0.4fr 1.0fr 1fr 0.4fr;
+  grid-template-columns: 0.4fr 1.0fr 0.5fr 0.4fr;
   grid-template-rows: 0.4fr 24px 2.5fr 0.2fr;
   gap: 20px 20px;
   grid-template-areas: "whitespace-left title title whitespace-right"
@@ -39,7 +39,22 @@ html, body, .grid-container {
 
   font-family: 'Open Sans', sans-serif;
   font-size: 11pt;
-}
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr minmax(320px, 720px) 320px 0.5fr;
+  grid-template-rows: 0.4fr 24px 2.5fr 0.2fr;
+  gap: 20px 20px;
+  grid-template-areas: "whitespace-left title title whitespace-right"
+        "whitespace-left navigation navigation whitespace-right"
+        "whitespace-left left-pane right-pane whitespace-right" 
+        "whitespace-left footer footer whitespace-right";
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+} */
+
 
 .title { 
   grid-area: title;
@@ -158,7 +173,8 @@ h1, h2, h3 {
 }
 
 .nav-flex-container > div {
-  margin-left: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: center;
 }
 .nav-flex-container a{
@@ -252,6 +268,9 @@ h1, h2, h3 {
   background-color: var(--color-neum-mid-hover); 
 }
 
+.click-shadow:active {
+  background-color: var(--color-neum-mid-hover); 
+}
 
 ul {
   list-style-type: none;

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>The Carolina Technical</title>
+  <title>The Carolina Technical - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/index.css">
   <link rel="stylesheet" href="/styles/jquery.css">
@@ -27,13 +27,13 @@
 
     <div class="navigation shadow00">
       <div class="nav-flex-container">
-        <div>
+        <div class="click-shadow">
           <a href="/index.html">Home</a>
         </div>
-        <div>
+        <div class="click-shadow">
           <a href="/pages/about.html">About</a>
         </div>
-        <div>
+        <div class="click-shadow">
           <a href="/pages/contact.html">Contact</a>
         </div>
       </div>
@@ -42,19 +42,101 @@
     <div class="left-pane shadow00">
       <!-- <h3>Feed</h3> -->
       <ul class="feed-list">
+        
+        <li class="feed-list-item" id="fourth-item">
+          <ul class="feed-flex-container">
+            <li class="feed-flex-item flex-thumbnail">
+              <a class="post-link" href="/feed/posts/2020.11.17-the_birth_of_legacy_software.html">
+                <img src="/assets/template/carolina01.png" class="feed-img" id="template-thumbnail"
+                  alt="King St, Charleston, SC">
+              </a>
+            </li>
+            <li class="feed-flex-item flex-content">
+              <ul class="feed-item-body-list">
+                <li class="feed-item-title">
+                  <a class="post-link" href="/feed/posts/2020.11.17-the_birth_of_legacy_software.html">
+                    <b>Tuesday Thoughts: The Birth of Legacy Software</b>
+                  </a>
+                </li>
+                <li class="feed-item-source">thecarolinatechnical.com</li>
+                <li class="feed-item-tags">
+                  <ul class="tags-flex-container">
+                    <li class="tag-flex-item">commentary</li>
+                    <li class="tag-flex-item">tuesday-thoughts</li>
+                  </ul>
+                <li class="feed-item-context">Comments | Share | Permalink</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="feed-list-item" id="third-item">
+          <ul class="feed-flex-container">
+            <li class="feed-flex-item flex-thumbnail">
+              <a class="post-link" href="/feed/posts/2020.11.11-why_leaders_need_to_learn_the_skill_of_writing.html">
+                <img src="/assets/template/chesspiece00.jpg" class="feed-img" id="template-thumbnail"
+                  alt="King St, Charleston, SC">
+              </a>
+            </li>
+            <li class="feed-flex-item flex-content">
+              <ul class="feed-item-body-list">
+                <li class="feed-item-title">
+                  <a class="post-link" href="/feed/posts/2020.11.11-why_leaders_need_to_learn_the_skill_of_writing.html">
+                    <b>Tuesday Thoughts: Why Leaders Need to Learn the Skill of Writing</b>
+                  </a>
+                </li>
+                <li class="feed-item-source">thecarolinatechnical.com</li>
+                <li class="feed-item-tags">
+                  <ul class="tags-flex-container">
+                    <li class="tag-flex-item">commentary</li>
+                    <li class="tag-flex-item">tuesday-thoughts</li>
+                  </ul>
+                <li class="feed-item-context">Comments | Share | Permalink</li>
+              </ul>
+            </li>
+          </ul>
+        </li>        
+
+        <li class="feed-list-item" id="second-item">
+          <ul class="feed-flex-container">
+            <li class="feed-flex-item flex-thumbnail">
+              <a class="post-link" href="/feed/posts/2020.11.03-dont_write_code.html">
+                <img src="/assets/template/kingst00.jpeg" class="feed-img" id="template-thumbnail"
+                  alt="King St, Charleston, SC">
+              </a>
+            </li>
+            <li class="feed-flex-item flex-content">
+              <ul class="feed-item-body-list">
+                <li class="feed-item-title">
+                  <a class="post-link" href="/feed/posts/2020.11.03-dont_write_code.html">
+                    <b>Tuesday Thoughts: Don't Write Code</b>
+                  </a>
+                </li>
+                <li class="feed-item-source">thecarolinatechnical.com</li>
+                <li class="feed-item-tags">
+                  <ul class="tags-flex-container">
+                    <li class="tag-flex-item">commentary</li>
+                    <li class="tag-flex-item">tuesday-thoughts</li>
+                  </ul>
+                <li class="feed-item-context">Comments | Share | Permalink</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
         <li class="feed-list-item user-active" id="top-item">
           <ul class="feed-flex-container">
             <li class="feed-flex-item flex-thumbnail">
-              <a class="post-link" href="/feed/posts/template-post.html">
-                <img src="/feed/template/carolina01.png" class="feed-img" id="template-thumbnail"
+              <a class="post-link" href="/feed/posts/choose_boring_technology-commentary.html">
+                <img src="/assets/template/carolina01.png" class="feed-img" id="template-thumbnail"
                   alt="Generic SC photo">
               </a>
             </li>
             <li class="feed-flex-item flex-content">
               <ul class="feed-item-body-list">
                 <li class="feed-item-title">
-                  <a class="post-link" href="/feed/posts/template-post.html">
-                    <b>Title - this is a template post</b>
+                  <a class="post-link" href="/feed/posts/2020.10.27-choose_boring_technology.html">
+                    <b>Tuesday Thoughts: Choose Boring Technology (Commentary)</b>
                   </a>
                 </li>
                 <li class="feed-item-source">
@@ -62,8 +144,8 @@
                 </li>
                 <li class="feed-item-tags">
                   <ul class="tags-flex-container">
-                    <li class="tag-flex-item">text post</li>
-                    <li class="tag-flex-item">test</li>
+                    <li class="tag-flex-item">commentary</li>
+                    <li class="tag-flex-item">tuesday-thoughts</li>
                   </ul>
                 </li>
                 <li class="feed-item-context">Comments | Share | Permalink</li>
@@ -71,32 +153,8 @@
             </li>
           </ul>
         </li>
-        <li class="feed-list-item" id="second-item">
-          <ul class="feed-flex-container">
-            <li class="feed-flex-item flex-thumbnail">
-              <a class="post-link" href="https://www.reddit.com/r/pics/comments/92dd8/test_post_please_ignore/">
-                <img src="/feed/template/kingst00.jpeg" class="feed-img" id="template-thumbnail"
-                  alt="King St, Charleston, SC">
-              </a>
-            </li>
-            <li class="feed-flex-item flex-content">
-              <ul class="feed-item-body-list">
-                <li class="feed-item-title">
-                  <a class="post-link" href="https://www.reddit.com/r/pics/comments/92dd8/test_post_please_ignore/">
-                    <b>Another post in the feed</b>
-                  </a>
-                </li>
-                <li class="feed-item-source">thecarolinatechnical.com</li>
-                <li class="feed-item-tags">
-                  <ul class="tags-flex-container">
-                    <li class="tag-flex-item">text post</li>
-                    <li class="tag-flex-item">test</li>
-                  </ul>
-                <li class="feed-item-context">Comments | Share | Permalink</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+
+          <!-- 
         <li class="feed-list-item" id="third-item">
           <ul class="feed-flex-container">
             <li class="feed-flex-item flex-thumbnail">
@@ -122,7 +180,7 @@
               </ul>
             </li>
           </ul>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="right-pane">
