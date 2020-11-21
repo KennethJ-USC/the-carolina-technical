@@ -110,6 +110,24 @@ html, body, .grid-container {
   grid-area: partner-list; 
 }
 
+.partner-flexbox {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #ffffff;
+  border-top: 1px solid var(--color-text-darkgray);
+  border-bottom: 1px solid var(--color-text-darkgray);
+
+  align-items: center;
+}
+
+#partner-logo-img {
+  margin: 8px 16px 8px 16px;
+  width: 102px;
+  height: auto;
+  align-self: center;
+}
+
 .whitespace-right { 
   grid-area: whitespace-right; 
 }
