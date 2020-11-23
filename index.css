@@ -28,34 +28,19 @@ html, body, .grid-container {
   padding-left: 4px;
 }
 
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 0.4fr 1.0fr 0.5fr 0.4fr;
-  grid-template-rows: 0.4fr 24px 2.5fr 0.2fr;
-  gap: 20px 20px;
-  grid-template-areas: "whitespace-left title title whitespace-right"
-        "whitespace-left navigation navigation whitespace-right"
-        "whitespace-left left-pane right-pane whitespace-right" 
-        "whitespace-left footer footer whitespace-right";
-
-  font-family: 'Open Sans', sans-serif;
-  font-size: 11pt;
-} */
-
 .grid-container {
   display: grid;
-  grid-template-columns: 0.5fr minmax(320px, 720px) 320px 0.5fr;
+  grid-template-columns: minmax(427px, 720px) auto;
   grid-template-rows: 0.4fr 24px 2.5fr 0.2fr;
   gap: 20px 20px;
-  grid-template-areas: "whitespace-left title title whitespace-right"
-        "whitespace-left navigation navigation whitespace-right"
-        "whitespace-left left-pane right-pane whitespace-right" 
-        "whitespace-left footer footer whitespace-right";
+  grid-template-areas: "title title"
+        "navigation navigation"
+        "left-pane right-pane" 
+        "footer footer";
 
   font-family: 'Open Sans', sans-serif;
   font-size: 11pt;
 } */
-
 
 .title { 
   grid-area: title;
@@ -66,18 +51,19 @@ html, body, .grid-container {
   width: 400px;
 }
 
-#site-title-div {
-  /* border: 1px solid black; */
-}
-
 .navigation {
+  /* width: 1058px; */
+  margin-top: 0px;  
+
+  grid-area: navigation;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  grid-template-areas: "button-bar profile";
-  grid-area: navigation;
-  margin-top: 0px;  
+  grid-template-areas: "button-bar profile"; 
 }
 
 .button-bar { 
@@ -96,11 +82,15 @@ html, body, .grid-container {
 
 .right-pane {
   display: grid;
+  
+  width: 320px;
+  
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 600px 1r;
+  grid-template-rows: auto auto;
   gap: 16px 1px;
   grid-template-areas: "spotlight spotlight" "partner-list partner-list";
   grid-area: right-pane;
+
 }
 
 .spotlight { 
@@ -110,6 +100,8 @@ html, body, .grid-container {
 
 .partner-list { 
   grid-area: partner-list; 
+
+  /* overflow-x: hidden; */
 }
 
 .partner-flexbox {
@@ -132,15 +124,6 @@ html, body, .grid-container {
   height: auto;
   align-self: center;
 }
-
-.whitespace-right { 
-  grid-area: whitespace-right; 
-}
-
-.whitespace-left { 
-  grid-area: whitespace-left; 
-}
-
 
 .profile { 
   grid-area: profile; 
@@ -256,10 +239,6 @@ h1, h2, h3 {
   border-top: 1px solid var(--color-neum-dark);
 }
 
-/* .feed-list > .user-active {
-  background-color: var(--color-neum-light);
-} */
-
 .feed-item-title {
   color: var(--color-text-darkgray);
   font-size: larger;
@@ -326,9 +305,23 @@ a:link {
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 767px) {
-  /* Your Styles... */ 
+@media only screen and (min-width: 300px) and (max-width: 740px) {
+  
+  .right-pane {
+    width: 100%;
+  }
+  
+  .grid-container {
+    grid-template-areas: "title"
+          "navigation"
+          "left-pane"
+          "right-pane"
+          "footer";
+  }
+}
 
+/* @media only screen and (min-width: 300px) and (max-width: 720px) {
+ 
   html {
     display: block;
     overflow-x: hidden;
@@ -348,10 +341,10 @@ a:link {
     grid-template-columns: 0.0fr 1.0fr 1.0fr 0.0fr;
     grid-template-rows: 0.4fr 24px 2.5fr 1fr 0.2fr;
     gap: 16px 0px;
-    grid-template-areas: "whitespace-left title title whitespace-right"
-          "whitespace-left navigation navigation whitespace-right"
-          "whitespace-left left-pane left-pane whitespace-right" 
-          "whitespace-left right-pane right-pane whitespace-right"
+    grid-template-areas: "title title"
+    "navigation navigation"
+          "left-pane left-pane" 
+          "right-pane right-pane"
           "footer footer footer footer";
   
     font-family: 'Open Sans', sans-serif;
@@ -362,4 +355,7 @@ a:link {
   grid-area: title;
   padding: 4px 0px 0px 2px;
 }
+
+
 }
+ */
