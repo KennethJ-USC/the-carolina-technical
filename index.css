@@ -23,6 +23,7 @@ html, body, .grid-container {
 }
 
 .site-warning {
+  width: 240px;
   background-color: rgb(255, 94, 94);
   padding-left: 4px;
 }
@@ -58,6 +59,7 @@ html, body, .grid-container {
 
 .title { 
   grid-area: title;
+  padding: 4px 0px 0px 2px !important;
 }
 
 #logo-svg {
@@ -113,17 +115,20 @@ html, body, .grid-container {
 .partner-flexbox {
   display: flex;
   flex-direction: row;
+  
+  background-color: #ffffff !important;
 
-  background-color: #ffffff;
-  border-top: 1px solid var(--color-text-darkgray);
-  border-bottom: 1px solid var(--color-text-darkgray);
+  margin-left: 8px;
+  margin-right: 8px;
 
+  /* border-top: 1px solid var(--color-text-darkgray);
+  border-bottom: 1px solid var(--color-text-darkgray); */
   align-items: center;
 }
 
 #partner-logo-img {
   margin: 8px 16px 8px 16px;
-  width: 102px;
+  width: 80px;
   height: auto;
   align-self: center;
 }
@@ -217,6 +222,7 @@ h1, h2, h3 {
 
 .flex-thumbnail {
   order: 1;
+  width: 120px;
 }
 .flex-content {
   order: 2;
@@ -224,18 +230,26 @@ h1, h2, h3 {
 
 .feed-item-body-list {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 8px;
 }
 
 .feed-img {
   height: 60pt;
   border: 1px solid var(--color-neum-dark);
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feed-list-item {
-  margin: 0ex 0;
+  margin: 0px 0px;
+  padding: 4px 0px;
+
   /* border-top: 1px solid var(--color-neum-dark); */
   border-bottom: 1px solid var(--color-neum-dark);
+
+  font-size: small;
 }
 
 .feed-list > li:first-child {
@@ -312,13 +326,28 @@ a:link {
   justify-content: space-between;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  /* Your Styles... */ 
 
-@media screen and (max-width: 860px) {
+  html {
+    display: block;
+    overflow-x: hidden;
+
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: block;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 0.0fr 1.0fr 1.0fr 0.0fr;
     grid-template-rows: 0.4fr 24px 2.5fr 1fr 0.2fr;
-    gap: 20px 0px;
+    gap: 16px 0px;
     grid-template-areas: "whitespace-left title title whitespace-right"
           "whitespace-left navigation navigation whitespace-right"
           "whitespace-left left-pane left-pane whitespace-right" 
@@ -327,9 +356,10 @@ a:link {
   
     font-family: 'Open Sans', sans-serif;
     font-size: 11pt;
-  }
+}
 
-
-
-
+.title {
+  grid-area: title;
+  padding: 4px 0px 0px 2px;
+}
 }
