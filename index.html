@@ -16,19 +16,15 @@
 </head>
 
 <body>
+  <div class="grid-container grid-container-full">
 
-  <!-- <div class="site-warning" style="width: 240px;">
-    <p>Note: Site still under construction - please check back later!</p>
-  </div> -->
-  <div class="grid-container">
-
-    <div class="title">
+    <div class="title transition-width>
       <a href=index.html alt="logo link" width="300" height="112">
         <img src="assets/logo/logo.svg.png" class="shadow00" id="logo-png" alt="The Carolina Technical logo">
       </a>
     </div>
 
-    <div class="navigation shadow00">
+    <div class="navigation transition-width neu-border00">
       <div class="nav-flex-container">
         <div class="click-shadow">
           <a href="/index.html">Home</a>
@@ -41,9 +37,10 @@
         </div>
       </div>
     </div>
+    <div id="navigation-shadow" class="neu00 transition-width grid-item-shadow"></div>
 
-    <div class="left-pane shadow00">
-      <!-- <h3>Feed</h3> -->
+    <div class="left-pane neu-border00">
+      <h3>Feed</h3>
       <ul class="feed-list">
 
         <li class="feed-list-item" id="fourth-item">
@@ -160,10 +157,18 @@
 
       </ul>
     </div>
+    <div id="left-pane-shadow" class="neu00 grid-item-shadow"></div>
+
     <div class="right-pane">
-      <div class="partner-list shadow00">
+      <div class="spotlight neu-border00">
+        <h3>Spotlight</h3>
+      </div>
+      <div id="spotlight-shadow" class="neu00"></div>
+
+      <div class="partner-list">
         <h3>Partners</h3>
-        <div onclick="location.href='https\://fucketbucket.net'" style="cursor: pointer;" class="shadow00 partner-flexbox">
+        
+        <div id="partner-top" onclick="location.href='https\://fucketbucket.net'" style="cursor: pointer;" class="neu-border00 partner-flexbox">
           <div class="partner-logo">
             <a href="https://fucketbucket.net" alt="logo link">
               <img src="assets/partners/fucket-bucket/IMG_0322.jpg" id="partner-logo-img" alt="FucketBucket image">
@@ -177,9 +182,8 @@
             <p style="font-weight: bold; font-style: italic;">www.fucketbucket.net</p>
           </div>
         </div>
-      </div>
-      <div class="spotlight shadow00">
-        <h3>Spotlight</h3>
+        <div id="partner-top-shadow" class=neu00></div>
+
       </div>
     </div>
 
@@ -194,6 +198,10 @@
     </div>
 
   </div>
+  <div class="whitespace-left"></div>
+  <div class="whitespace-right"></div>
+</div>
+
 </body>
 
 </html>

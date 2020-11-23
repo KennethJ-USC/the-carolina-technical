@@ -28,6 +28,40 @@ body .grid-container-static-page {
   background: var(--color-neum-mid);
 }
 
+.shadow00 {
+  margin: 4px 2px 0px 2px;
+
+  border-radius: 4px;
+  border: 1px solid var(--color-neum-dark);
+
+  /*====================
+  For Neumorphism Effect 
+  =====================*/
+  background-color: var(--color-neum-mid);
+  box-shadow: 9px 9px 16px var(--color-neum-dark),
+    -9px -9px 16px var(--color-neum-light);
+
+}
+
+h1,
+h2,
+h3 {
+  margin-left: 32px;
+  margin-right: 32px;
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  border-bottom: 1px solid rgb(43, 4, 4);
+}
+
+p {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* ========================================================================= */
+/* ========================================================================= */
 .grid-container-static-page {
 
   /* background-color: lightpink !important; */
@@ -47,6 +81,8 @@ body .grid-container-static-page {
   height: auto;
   overflow: hidden;
 }
+/* ========================================================================= */
+/* ========================================================================= */
 
 .site-warning {
   display: block;
@@ -64,33 +100,6 @@ body .grid-container-static-page {
 .title {
   grid-area: title;
   padding: 4px 0px 0px 2px;
-}
-
-.shadow00 {
-  border-radius: 4px;
-  border: 1px solid var(--color-neum-dark);
-  /* For Neumorphism Effect */
-  background-color: var(--color-neum-mid);
-  box-shadow: 9px 9px 16px var(--color-neum-dark),
-    -9px -9px 16px var(--color-neum-light);
-  /* For Neumorphism Effect */
-}
-
-h1,
-h2,
-h3 {
-  margin-left: 32px;
-  margin-right: 32px;
-  color: #111111;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: larger;
-  border-bottom: 1px solid rgb(43, 4, 4);
-}
-
-p {
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .feed-img {
