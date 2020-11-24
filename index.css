@@ -82,8 +82,6 @@ h1, h2, h3 {
   min-width: 320px;
   gap: 10px 6px;
 
-
-  align-items: right;
   grid-template-areas: "title"
         "navigation"
         "left-pane"
@@ -131,8 +129,8 @@ h1, h2, h3 {
 
 .left-pane { 
   grid-area: left-pane;
-  max-width: 1080px;
-
+  /* max-width: 1080px; */
+  max-width: 720px;
   z-index: 100
 }
 
@@ -142,12 +140,12 @@ h1, h2, h3 {
 
   display: grid;
   grid-area: right-pane;
-  min-width: 360px;
+  min-width: 320px;
   max-width: 480px;
-  gap: 16px 1px;
+  gap: 16px 0px;
   
-  grid-template-columns: 360px;
-  grid-template-rows: 120px auto;
+  grid-template-columns: auto;
+  grid-template-rows: 122px auto;
   grid-template-areas: "spotlight" "partner-list";
 
   z-index: 101;
@@ -156,10 +154,7 @@ h1, h2, h3 {
 
 .spotlight { 
   grid-area: spotlight;
-
-  width: 360px;
   height: 120px;
-  max-width: 360px;
   z-index: 500;
 }
 
@@ -330,6 +325,8 @@ h1, h2, h3 {
 
 .neu00 {
 /* For Neumorphism Effect */
+  border-radius: 4px;
+
   background-color: var(--color-neum-mid);
   box-shadow: 9px 9px 16px var(--color-neum-dark), -9px -9px 16px var(--color-neum-light) ;
 
@@ -342,13 +339,16 @@ h1, h2, h3 {
 }
 #left-pane-shadow {
   grid-area: left-pane;
+  max-width: 720px;
   z-index: 1;
 }
 #spotlight-shadow {
+
+  height: 122px;
   grid-area: spotlight;
-  width: 360px;
   z-index: 2;
 }
+
 .grid-item-shadow {
   margin: 0;
   padding: 0;
@@ -362,21 +362,33 @@ h1, h2, h3 {
 /* ========================================================================= */
 
 /* @media only screen and (min-width: 1080px) and (max-width: 1440px) { */
-@media only screen and (min-width: 1080px) {
-
-  /* body {
-    margin-left: 40px;
-  } */
-
-  .transition-width {
-    min-width: 1080px;
-    max-width: 1440px;
-  }
+@media only screen and (min-width: 720px) and (max-width: 1578px) {
 
   .grid-container-full {
 
-    grid-template-columns: 0.5fr minmax(720px, 1080px) 360px 0.5fr;
-    min-width: 1080px;
+    grid-template-columns: minmax(0,240px)  minmax(360px, 840px) 360px minmax(0px, 240px) ;
+
+    grid-template-areas: "whitespace-left title title whitespace-right"
+          "whitespace-left navigation navigation whitespace-right"
+          "whitespace-left left-pane right-pane whitespace-right" 
+          "whitespace-left footer footer whitespace-right";
+  }
+  
+  .whitespace-left {
+    grid-area: whitespace-left;
+  }
+  .whitespace-right {
+    grid-area: whitespace-right;
+  }
+  
+
+}
+
+@media only screen and (min-width: 1578px) {
+
+  .grid-container-full {
+
+    grid-template-columns: 240px 714px 360px 0.5fr;
 
     grid-template-areas: "whitespace-left title title whitespace-right"
           "whitespace-left navigation navigation whitespace-right"
