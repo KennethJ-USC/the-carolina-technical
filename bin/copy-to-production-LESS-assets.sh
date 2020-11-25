@@ -8,5 +8,5 @@ rsync \
   --times \
   --verbose \
   --compress \
-  --force --exclude="./assets" --rsh="ssh -p 22" /home/kennethj/aProj/the-carolina-technical/ \
+  --force --rsh="ssh -p 22" /home/kennethj/aProj/the-carolina-technical/ \
 kennyaj123_thecarolinatechnical@ssh.phx.nearlyfreespeech.net:/home/public

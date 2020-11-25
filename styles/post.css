@@ -6,6 +6,8 @@ body .grid-container-static-page {
   margin: 0;
   padding: 0;
 
+  overflow-x: hidden;
+
 
 
   --color-border-darkgray: #0f0f0f;
@@ -23,6 +25,11 @@ body .grid-container-static-page {
   --color-neum-mid-hover: #d2d9e4;
 
   background: var(--color-neum-mid);
+}
+
+.post-url {
+  color: red;
+  text-decoration: underline !important;
 }
 /* 
 body {
@@ -79,6 +86,8 @@ body {
   height: auto;
   overflow-x: hidden;
 }
+
+
 /* ========================================================================= */
 /* ========================================================================= */
 
